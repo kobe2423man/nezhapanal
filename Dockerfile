@@ -51,17 +51,17 @@ RUN mkdir -p /dashboard/data && chmod -R 777 /dashboard
 EXPOSE 8008
 
 # 环境变量
-ENV ARGO_DOMAIN="" \
-    ARGO_AUTH="" \
-    GITHUB_TOKEN="" \
-    GITHUB_REPO_OWNER="" \
-    GITHUB_REPO_NAME="" \
-    GITHUB_BRANCH="" \
-    ZIP_PASSWORD="" \
-    NZ_CLIENT_SECRET="" \
-    NZ_UUID="" \
-    NZ_TLS="" \
-    DASHBOARD_VERSION="" 
+ENV ARGO_DOMAIN="nezha.lolmf.dpdns.org" \
+    ARGO_AUTH="eyJhIjoiMGM1ZjJlNjRlNDMwNDE2ZWZjN2M1MzE4ZGUyMzE5MmYiLCJ0IjoiZWM3M2ZiYTItNmMwZi00NDY4LTg2NGQtZmM0ZjI3OTM3YjYxIiwicyI6Ik9UZGpNRGhqTmpJdFlUQXpNQzAwWkRZMUxUbGlaR0l0WmpFd01XVTJORGhoTldKbSJ9" \
+    GITHUB_TOKEN="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" \
+    GITHUB_REPO_OWNER="kobe2423man" \
+    GITHUB_REPO_NAME="nezhapanal" \
+    GITHUB_BRANCH="main" \
+    ZIP_PASSWORD="235523" \
+    NZ_CLIENT_SECRET="67ac751d-25b8-4594-a8ca-e4312680776a" \
+    NZ_UUID="786d946f-7a12-44b6-82fc-501622f99212" \
+    NZ_TLS="true" \
+    DASHBOARD_VERSION="v1.14.1" 
 
 # 复制脚本和静态文件
 COPY restore.sh /restore.sh
